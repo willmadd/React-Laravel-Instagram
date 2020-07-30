@@ -1,0 +1,296 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  color: #ffb310;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  text-align: center;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.loader {
+  border: 16px solid #2b6bb0;
+  border-radius: 50%;
+  border-top: 16px solid #ffb310;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 12;
+}
+
+.load-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 300px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+header {
+  width: 100%;
+  background-color: #2b6bb0;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+
+header h3 {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  cursor: pointer;
+}
+
+.tab-bar {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 115%;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  margin: 24px;
+}
+
+@media (min-width: 1024px) {
+  .tab-bar {
+    font-size: 36px;
+  }
+}
+
+.tab {
+  cursor: pointer;
+}
+
+.tab:hover {
+  box-sizing: border-box;
+  transition: 0.25s;
+  box-shadow: 0px -3px 0px #2b6bb0 inset;
+}
+
+.tab.active {
+  box-sizing: border-box;
+  transition: 0.25s;
+  box-shadow: 0px -3px 0px #ffb310 inset;
+}
+
+.grid > div::before,
+.grid > div > img {
+  grid-area: 1/1/2/2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.8);
+  z-index: 1;
+}
+
+.overlay-c {
+  padding: 126px;
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.grid > div {
+  padding: 0;
+  display: grid;
+}
+
+.grid > div > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.grid > div::before {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+
+.grid img {
+  width: 100%;
+}
+
+.grid .gallery-image-wrapper {
+  position: relative;
+}
+
+.grid .gallery-image-wrapper::before {
+  content: "";
+  padding-bottom: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.image-wrapper {
+  position: relative;
+  z-index: 11;
+}
+
+.image-wrapper img {
+  width: 100%;
+}
+
+.close {
+  background-color: white;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:before,
+.close:after {
+  position: absolute;
+  left: 13px;
+  top: 5px;
+  content: " ";
+  height: 18px;
+  width: 2px;
+  background-color: #333333;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.close-button-wrapper {
+  background-color: white;
+  position: absolute;
+  right: -16px;
+  top: -16px;
+  width: 12px;
+  height: 12px;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.image-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-overlay:hover {
+  transition: 0.25s;
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+.image-overlay h3 {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.like-icon {
+  display: flex;
+  align-items: center;
+}
+
+.like-icon::before {
+  height: 16px;
+  width: 16px;
+  content: "";
+  display: block;
+  margin-right: 8px;
+  background-image: url(/images/icons/thumbs-up.svg);
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+
+.like-area {
+  font-family: "Titillium Web", sans-serif;
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  display: flex;
+}
+
+.like-area img {
+  width: 24px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.no-image-text {
+  font-family: "Titillium Web", sans-serif;
+  margin: 24px;
+  text-align: center;
+}
+

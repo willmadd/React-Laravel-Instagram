@@ -1,0 +1,37 @@
+$headingFont: "Titillium Web", sans-serif;
+$bodyFont: "Roboto", sans-serif;
+
+@mixin titleText {
+  font-family: $headingFont;
+  font-weight: 600;
+  color: $brandPrimary;
+  text-shadow: 0 2px 2px $shadow;
+  margin:0;
+  text-align: center;
+}
+
+@mixin headingText {
+  font-family: $bodyFont;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 115%;
+  margin:0;
+  @include breakpoint($desktop) {
+    font-size: 36px;
+  }
+}
+
+@mixin bodyText {
+  font-family: $bodyFont;
+  color: $black;
+  font-weight: 300;
+  margin:0;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin:0;
+}
+
+h1{
+  @include titleText();
+}

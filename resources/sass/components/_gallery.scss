@@ -1,0 +1,155 @@
+.grid > div::before,
+.grid > div > img {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: $overlay;
+    z-index: 1;
+}
+.overlay-c {
+    padding: 126px;
+    position: relative;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    @include breakpoint($tablet) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include breakpoint($desktop) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    > div {
+        padding: 0;
+        display: grid;
+        > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        &::before {
+            content: "";
+            padding-bottom: 100%;
+            display: block;
+        }
+    }
+    img {
+        width: 100%;
+    }
+
+    .gallery-image-wrapper {
+        position: relative;
+        &::before {
+            content: "";
+            padding-bottom: 100%;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+}
+
+.image-wrapper {
+    position: relative;
+    z-index: 11;
+    img {
+        width: 100%;
+    }
+}
+
+.close {
+    background-color: $white;
+}
+.close:hover {
+    opacity: 1;
+}
+.close:before,
+.close:after {
+    position: absolute;
+    left: 13px;
+    top: 5px;
+    content: " ";
+    height: 18px;
+    width: 2px;
+    background-color: $black;
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.close-button-wrapper {
+    background-color: $white;
+    position: absolute;
+    right: -16px;
+    top: -16px;
+    width: 12px;
+    height: 12px;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.image-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        transition: 0.25s;
+        background: $lightOverlay;
+        opacity: 1;
+    }
+    h3 {
+        font-family: $headingFont;
+    }
+}
+
+.like-icon {
+    display: flex;
+    align-items: center;
+    &::before {
+        height: 16px;
+        width: 16px;
+        content: "";
+        display: block;
+        margin-right: 8px;
+        background-image: url(/images/icons/thumbs-up.svg);
+        background-size: 16px;
+        background-repeat: no-repeat;
+    }
+}
+
+.like-area {
+    font-family: $headingFont;
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    background-color: $white;
+    padding: 16px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    display: flex;
+    img {
+        width: 24px;
+        margin-left: 8px;
+        cursor: pointer;
+    }
+}
+
+.no-image-text {
+    font-family: $headingFont;
+    margin: 24px;
+    text-align: center;
+}

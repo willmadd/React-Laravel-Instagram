@@ -1,0 +1,21 @@
+.tab-bar {
+    @include headingText;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    margin: 24px;
+}
+
+.tab {
+    cursor: pointer;
+    &:hover {
+        box-sizing: border-box;
+        transition: 0.25s;
+        box-shadow: 0px -3px 0px $brandSecondary inset;
+    }
+    &.active {
+        box-sizing: border-box;
+        transition: 0.25s;
+        box-shadow: 0px -3px 0px $brandPrimary inset;
+    }
+}
