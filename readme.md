@@ -3,6 +3,8 @@
 
 A bit like Instagram, but for AQL
 
+Built using React frontend on a Laravel backend
+
 ## Set up
 
 clone repo by running `git close https://github.com/willmadd/AQLgram.git`
