@@ -65868,9 +65868,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var Header = function Header(_ref) {
   var setLocale = _ref.setLocale;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, Object(_translations_translator__WEBPACK_IMPORTED_MODULE_1__["__"])('Welcome to AQL-Gram')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, Object(_translations_translator__WEBPACK_IMPORTED_MODULE_1__["__"])("Welcome to React-Laravel-Instagram")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     onClick: function onClick() {
-      setLocale('en_GB');
+      setLocale("en_GB");
     }
   }, "English"));
 };
@@ -66291,7 +66291,7 @@ var NoImages = function NoImages() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AqlGram; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RLInstagram; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
@@ -66331,15 +66331,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-var AqlGram = /*#__PURE__*/function (_Component) {
-  _inherits(AqlGram, _Component);
+var RLInstagram = /*#__PURE__*/function (_Component) {
+  _inherits(RLInstagram, _Component);
 
-  var _super = _createSuper(AqlGram);
+  var _super = _createSuper(RLInstagram);
 
-  function AqlGram() {
+  function RLInstagram() {
     var _this;
 
-    _classCallCheck(this, AqlGram);
+    _classCallCheck(this, RLInstagram);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
@@ -66367,7 +66367,7 @@ var AqlGram = /*#__PURE__*/function (_Component) {
     return _this;
   }
 
-  _createClass(AqlGram, [{
+  _createClass(RLInstagram, [{
     key: "render",
     value: function render() {
       var _this$state = this.state,
@@ -66387,13 +66387,13 @@ var AqlGram = /*#__PURE__*/function (_Component) {
     }
   }]);
 
-  return AqlGram;
+  return RLInstagram;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
 
-if (document.getElementById("aqlgram")) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(AqlGram, null), document.getElementById("aqlgram"));
+if (document.getElementById("rlinstagram")) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RLInstagram, null), document.getElementById("rlinstagram"));
 }
 
 /***/ }),
@@ -66506,10 +66506,10 @@ webpackContext.id = "./resources/js/translations/locales sync recursive ^\\.\\/.
 /*!******************************************************!*\
   !*** ./resources/js/translations/locales/en_GB.json ***!
   \******************************************************/
-/*! exports provided: Likes, Welcome to AQL-Gram, default */
+/*! exports provided: Likes, Welcome to Welcome to React-Laravel-Instagram, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"Likes\":\"Likegg\",\"Welcome to AQL-Gram\":\"Welcome to AQL-Gramg\"}");
+module.exports = JSON.parse("{\"Likes\":\"Likes\",\"Welcome to Welcome to React-Laravel-Instagram\":\"Welcome to React-Laravel-Instagram\"}");
 
 /***/ }),
 
@@ -66517,10 +66517,10 @@ module.exports = JSON.parse("{\"Likes\":\"Likegg\",\"Welcome to AQL-Gram\":\"Wel
 /*!******************************************************!*\
   !*** ./resources/js/translations/locales/fr_FR.json ***!
   \******************************************************/
-/*! exports provided: Likes, Welcome to AQL-Gram, posts, tagged, default */
+/*! exports provided: Likes, Welcome to React-Laravel-Instagram, posts, tagged, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"Likes\":\"Aime\",\"Welcome to AQL-Gram\":\"Bienvenue à\",\"posts\":\"Des ostes\",\"tagged\":\"étiqueté\"}");
+module.exports = JSON.parse("{\"Likes\":\"Aime\",\"Welcome to React-Laravel-Instagram\":\"Welcome to React-Laravel-Instagram\",\"posts\":\"Des ostes\",\"tagged\":\"étiqueté\"}");
 
 /***/ }),
 
@@ -66572,8 +66572,8 @@ var findTranslationsFile = function findTranslationsFile(locale) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/william/Desktop/AQL/AQLgram/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/william/Desktop/AQL/AQLgram/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/williammaddicott/Desktop/AQLgram/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/williammaddicott/Desktop/AQLgram/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

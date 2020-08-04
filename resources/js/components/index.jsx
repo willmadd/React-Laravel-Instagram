@@ -5,7 +5,7 @@ import Header from "./Header";
 import TabBar from "./tabs/TabBar";
 import Gallery from "./gallery/Gallery";
 
-export default class AqlGram extends Component {
+export default class RLInstagram extends Component {
     state = {
         locale: "en_GB",
         tab: "posts"
@@ -36,6 +36,6 @@ export default class AqlGram extends Component {
     }
 }
 
-if (document.getElementById("aqlgram")) {
-    ReactDOM.render(<AqlGram />, document.getElementById("aqlgram"));
+if (document.getElementById("rlinstagram")) {
+    ReactDOM.render(<RLInstagram />, document.getElementById("rlinstagram"));
 }
